@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Salted | A Responsive Email Template</title>
+
+<!--
+
+        SALTED | A RESPONSIVE EMAIL TEMPLATE
+
+        =====================================
+
+        Based on code used and tested by Litmus (@litmusapp)
+
+        Originally developed by Bording Vista (@Bordingvista)
+
+        Cleaned up by Kofil Mahamud (@kma)
+
+        Presented by A List Apart (@alistapart)
+
+        Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
+
+        It's highly recommended that you test using a service like Litmus and your own devices.
+
+        Enjoy!
+
+    -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+/* CLIENT-SPECIFIC STYLES */
+a, a:link, a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 21px;
+}
+#outlook a {
+	padding: 0;
+}
+/* Force Outlook to provide a "view in browser" message */
+
+.ReadMsgBody {
+	width: 100%;
+}
+.ExternalClass {
+	width: 100%;
+}
+/* Force Hotmail to display emails at full width */
+
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+	line-height: 100%;
+}
+/* Force Hotmail to display normal line spacing */
+
+body, table, td, a {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+/* Prevent WebKit and Windows mobile changing default text sizes */
+
+table, td {
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+/* Remove spacing between tables in Outlook 2007 and up */
+
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* Allow smoother rendering of resized image in Internet Explorer */
+
+        /* RESET STYLES */
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+img {
+	border: 0;
+	height: auto;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+}
+table {
+	border-collapse: collapse !important;
+}
+body {
+	height: 100% !important;
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+}
+/* iOS BLUE LINKS */
+
+.appleBody a {
+	color: #68440a;
+	text-decoration: none;
+}
+.appleFooter a {
+	color: #999999;
+	text-decoration: none;
+}
+
+/* MOBILE STYLES */
+
+@media screen and (max-width: 525px) {
+/* ALLOWS FOR FLUID TABLES */
+.mobile-pad {
+	padding: 20px !important;
+}
+table[class="wrapper"] {
+	width: 100% !important;
+}
+/* ADJUSTS LAYOUT OF LOGO IMAGE */
+
+td[class="logo"] {
+	text-align: left;
+	padding: 20px 0 20px 0 !important;
+}
+td[class="logo"] img {
+	margin: 0 auto !important;
+}
+/* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+
+td[class="mobile-hide"] {
+	display: none;
+}
+img[class="mobile-hide"] {
+	display: none !important;
+}
+img[class="img-max"] {
+	max-width: 100% !important;
+	height: auto !important;
+	width: 100% !important;
+}
+/* FULL-WIDTH TABLES */
+
+table[class="responsive-table"] {
+	width: 100% !important;
+}
+/* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+
+td[class="padding"] {
+	padding: 0px 5% 0px 5% !important;
+}
+td[class="padding-copy"] {
+	text-align: center;
+	min-width: inherit !important;
+}
+td[class="padding-meta"] {
+	padding: 30px 5% 0px 5% !important;
+	text-align: center;
+}
+td[class="no-pad"] {
+	padding: 0 0 20px 0 !important;
+}
+td[class="no-padding"] {
+	padding: 0 !important;
+}
+td[class="section-padding"] {
+/* padding: 0px 15px 0px 15px !important; */
+
+}
+td[class="section-padding-bottom-image"] {
+	padding: 50px 15px 0 15px !important;
+}
+/* ADJUST BUTTONS ON MOBILE */
+
+td[class="mobile-wrapper"] {
+	padding: 0px !important;
+}
+table[class="mobile-button-container"] {
+	margin: 0 auto;
+	width: 100% !important;
+}
+a[class="mobile-button"] {
+	width: 80% !important;
+	padding: 15px !important;
+	border: 0 !important;
+	font-size: 16px !important;
+}
+}
+</style>
+</head>
+<body bgcolor="#f7f7f7" style="margin: 0; padding: 0 !important;">
+<!-- Hasina -->
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 600px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="width:50%;background-color: #e3e3e3;" class="section-padding" align="center" width="300">
+                                <table style="width: 300px;background-color: #e3e3e3;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding-top: 20px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px;">
+                                                                <!-- COPY -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="left" width="300"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="width:50%;background-color: #e3e3e3;" class="section-padding" align="center" width="300">
+                                <table style="width: 300px;background-color: #e3e3e3;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding-top: 20px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px;">
+                                                                <!-- COPY -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="left" width="300"><div style="text-align: right;"><a title="Google" href="https://www.google.com" target="_blank">Show on desktop</a></div></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" border="0" class="section-padding" align="center">
+                <table style="width: 600px;
+                       background-color: #ffffff;" class="responsive-table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 20px;
+                                                 " height="">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="padding-copy" align="left" width="600"><div style="text-align: center;"><strong><span style="font-family: georgia,palatino,serif;font-size: 18pt;">Create an email now!<br><br></span></strong></div><div style="text-align: justify;">Click anywhere in your template to change the format and design. Click text or images to add your content or hover to see delete option. You can move things around and drag on new components from the components tab. You can also change the size and color of the body of your email by clicking Body tab.</div><br><div style="text-align: center;"><span style="font-size: 12pt;">When you are ready, simply save and send for proofing.</span></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%"> 
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width:600px;  background-color: #ffffff;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 20px;
+                                                               " height="0">                                                          
+                                                <table class="responsive-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="middle" width="600">
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="background-color: #c7c7c7;
+                                                                                               width: 200px;
+                                                                                               border-radius: 20px;" align="center" height="40">
+                                                                                <a href="https://www.google.com/" target="_blank" style="text-decoration:none !important;display:block !important;"><span style="font-size: 18pt;color: #ff0000;"><strong>Click here</strong></span></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 600px;
+                                      " class="responsive-table" cellpadding="0" cellspacing="0" width="600">                                     
+                    <tbody>
+                        <tr>
+                            <td style="position:relative;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="
+                                                                               " class="padding-copy">
+                                                                <table style="max-width:100%; min-width:100%;" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>                                                                    
+                                                                            <td class="padding-copy" align="center">
+                                                                                <img style="display: block;color: #666666; text-decoration: none;font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                                    width: 600px;
+                                                                                                    height:auto !important;" src="https://img.bordingmailit.se/lrf/extpro/ATL_23nr_299.jpg" alt="Single Image" class="img-max" border="0" height="auto" width="600">                                                                               
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" border="0" class="section-padding" align="center">
+                <table style="width: 600px;background-color: #ffffff;" class="responsive-table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 25px;" height="60">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="padding-copy" align="center" width="600"><hr style="color: #e3e3e3;background-color: #e3e3e3;height: 5px;
+                                                                                                                               border:0px #e3e3e3;border-radius: 0px;margin:0;" size="5"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 600px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="width:50%;background-color: #bc99d4;" class="section-padding" align="center" width="300">
+                                <table style="width: 300px;background-color: #bc99d4;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 10px;">
+                                                                <!-- COPY -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="left" width="300"><div style="text-align: left;"><span style="font-size: 12pt;">This is double column for text only.</span><br><br>Click over the components to change the property of the text. Click the Left Content to change the style or text of this componet.</div></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="width:50%;background-color: #64cbdb;" class="section-padding" align="center" width="300">
+                                <table style="width: 300px;background-color: #64cbdb;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 10px;">
+                                                                <!-- COPY -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="left" width="300"><div style="text-align: left;"><span style="font-size: 12pt;">This is double column for text only.</span><br><br>Click over the components to change the property of the text. Click the Right Content to change the style or text of this componet.</div></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 600px;background-color: #ffffff;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>                                                
+                            <td style="width:50%;padding: 0;background-color: #ffffff;" class="section-padding" align="center" width="300">
+                                <table style="width: 300px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 20px;" height="0">                                                       
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>                                                                          
+                                                                            <td class="padding-copy" align="center" valign="middle" width="300">
+                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tbody>
+                                                                                        <tr>                                                                                      
+                                                                                            <td style="background-color: #c7c7c7;
+                                                                                                               width: 200px;
+                                                                                                               border-radius: 20px;" align="center" height="40">                 
+                                                                                                 <a href="https://www.google.com/" target="_blank" style="text-decoration:none !important;display:block !important;"><span style="font-size: 18pt;color: #ff0000;"><strong>Click here</strong></span></a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="width:50%;padding: 0;background-color: #ffffff;" class="section-padding" align="center" width="300">
+                                <table style="width: 300px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 20px;
+                                                                            " height="0">                                                                                                                                  
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="center" valign="middle" width="300">
+                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="background-color: #c7c7c7;
+                                                                                                                width: 200px; 
+                                                                                                                border-radius: 20px;" align="center" height="40">
+                                                                                                <a href="https://www.google.com/" target="_blank" style="text-decoration:none !important;display:block !important;"><span style="font-size: 18pt;color: #ff0000;"><strong>Click here</strong></span></a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Double Column Image -->
+<table style="background-color: #a34b4b;" bgcolor="#a34b4b" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td style="padding: 0;" class="section-padding" align="center"><table style="width: 600px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td style="padding: 0;" class="section-padding" align="center" bgcolor="#4ede2a" width="300"><table style="width: 300px;
+                                       background-color: #4ede2a;" class="responsive-table" cellpadding="0" cellspacing="0" width="300">
+                  <tbody>
+                    <tr>
+                      <td style="position:relative;"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td><!-- HERO IMAGE -->
+                                
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="" class="padding-copy"><table style="max-width:100%; min-width:100%;" border="0" cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                            <tr>
+                                              <td style="padding: 15px;" class="padding-copy" align="center"><img style="display: block;color: #666666; text-decoration: none;
+                                                                                                     font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                                     width: 270px;
+                                                                                                     height: 180px !important;" src="https://img.bordingmailit.se/lrf/extpro/ATL_chefred_lilan.jpg" alt="Left image" class="img-max" border="0" height="180" width="270"></td>
+                                            </tr>
+                                          </tbody>
+                                        </table></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td style="padding: 0;" class="section-padding" align="center" bgcolor="#40b330" width="300"><table style="width: 300px;
+                                       background-color: #40b330;" class="responsive-table" cellpadding="0" cellspacing="0" width="300">
+                  <tbody>
+                    <tr>
+                      <td style="position:relative;"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td><!-- HERO IMAGE -->
+                                
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="" class="padding-copy"><table style="max-width:100%; min-width:100%;" border="0" cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                            <tr>
+                                              <td style="padding: 15px;" class="padding-copy" align="center"><img style="display: block;color: #666666; text-decoration: none;
+                                                                                     font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 270px;
+                                                                                     height: 180px !important;" src="https://img.bordingmailit.se/lrf/extpro/LMN_3nr_199.jpg" alt="Right image" class="img-max" border="0" height="180" width="270"></td>
+                                            </tr>
+                                          </tbody>
+                                        </table></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- Double Column Content + Image -->
+<table style="background-color: #822424;" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td style="padding: 0;" class="section-padding" align="center">
+      <table style="width: 600px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td style="width:50%" class="section-padding" align="center" bgcolor="#b1c8e3" width="300"><table style="width: 300px;
+                                       background-color: #569e6a;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td class="mobile-pad" style="border: 0px solid;height:156px;"><!-- COPY -->
+                                
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td class="padding-copy" align="center" width="300"><div style="text-align:center"><h1>Title 1</h1></div><span style="color: #00ff00;background-color: #800080;font-size: 18pt;">This is Left column text</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td style="width:50%" class="section-padding" align="center" bgcolor="#b1c8e3" width="300"><table style="width: 300px;
+                                       background-color: #f00;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td class="mobile-pad" style="border: 0px solid;"><!-- COPY -->
+                                
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td class="padding-copy" align="center" width="300"><img style="display: block;color: #666666; text-decoration: none;
+                                                                                     font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 270px;
+                                                                                     height: 156px !important;" src="https://img.bordingmailit.se/lrf/extpro/LMN_3nr_199.jpg" alt="Right image" class="img-max" border="0" height="156" width="270"></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Saif -->
+<table style="background-color: #e3e3e3;" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 600px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="width:50%; background-color: #3fb32b;" class="section-padding" align="center" width="300">                                               
+                                <table style="width: 300px;    background-color: #3fb32b;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="
+                                                                               ">                                                                
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="center" width="300">
+                                                                                <img style="display: block;color: #666666; text-decoration: none;font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                                    width: 300px;
+                                                                                                    height: 200px !important;" src="https://img.bordingmailit.se/lrf/extpro/LMN_3nr_199.jpg" alt="Left image" class="img-max" border="0" height="200 !important" width="300">                                                                                                                                                                                                                                                               
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+
+                            <td style="width:50%;background-color: #ed6132;" class="section-padding" align="center" width="300">
+                                <table style="width: 300px; 
+                                                      background-color: #ed6132;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style=" 
+                                                                              padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px;" height="200" valign="middle">                                                               
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="left" width="300"><div style="text-align: left;"><span style="font-size: 12pt;">This is two column for image and text<br><br></span>Add this component to have an image on left side and text on right side. You can change the property of the text and image by click over the component. Click the Right Content to change text and Left Content to change the image.</div></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- Double Column Image + Content -->
+<table style="background-color: #822424;" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td style="padding: 0;" class="section-padding" align="center"><table style="width: 600px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td style="width:50%" class="section-padding" align="center" bgcolor="#b1c8e3" width="300"><table style="width: 300px;
+                                       background-color: #f00;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td class="mobile-pad" style="border: 0px solid;"><!-- COPY -->
+                                
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td class="padding-copy" align="center" width="300"><img style="display: block;color: #666666; text-decoration: none;
+                                                                                     font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 270px;
+                                                                                     height: 156px !important;" src="https://img.bordingmailit.se/lrf/extpro/LMN_3nr_199.jpg" alt="Right image" class="img-max" border="0" height="156" width="270"></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td style="width:50%" class="section-padding" align="center" bgcolor="#b1c8e3" width="300"><table style="width: 300px;
+                                       background-color: #569e6a;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td class="mobile-pad" style="border: 0px solid;height:156px;"><!-- COPY -->
+                                
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td class="padding-copy" align="center" width="300"><span style="color: #00ff00;background-color: #800080;font-size: 18pt;">This is Left column text</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

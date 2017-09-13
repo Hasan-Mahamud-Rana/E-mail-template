@@ -1,0 +1,1310 @@
+
+<!DOCTYPE html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<html lang="en">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<head>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <title>Salted | A Responsive Email Template</title>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <!--
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        SALTED | A RESPONSIVE EMAIL TEMPLATE
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        =====================================
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        Based on code used and tested by Litmus (@litmusapp)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        Originally developed by Bording Vista (@Bordingvista)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        Cleaned up by Kofil Mahamud (@kma)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        Presented by A List Apart (@alistapart)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        It's highly recommended that you test using a service like Litmus and your own devices.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        Enjoy!
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <meta charset="utf-8">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <meta name="viewport" content="width=device-width">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <style type="text/css">
+ 
+        /* CLIENT-SPECIFIC STYLES */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        #outlook a {
+ 
+            padding: 0;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* Force Outlook to provide a "view in browser" message */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        .ReadMsgBody {
+ 
+            width: 100%;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        .ExternalClass {
+ 
+            width: 100%;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            /* Force Hotmail to display emails at full width */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+ 
+                line-height: 100%;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* Force Hotmail to display normal line spacing */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        body, table, td, a {
+ 
+            -webkit-text-size-adjust: 100%;
+ 
+            -ms-text-size-adjust: 100%;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        table, td {
+ 
+            mso-table-lspace: 0pt;
+ 
+            mso-table-rspace: 0pt;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* Remove spacing between tables in Outlook 2007 and up */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        img {
+ 
+            -ms-interpolation-mode: bicubic;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* Allow smoother rendering of resized image in Internet Explorer */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* RESET STYLES */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        body {
+ 
+            margin: 0 !important;
+ 
+            padding: 0 !important;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        img {
+ 
+            border: 0;
+ 
+            height: auto;
+ 
+            line-height: 100%;
+ 
+            outline: none;
+ 
+            text-decoration: none;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        table {
+ 
+            border-collapse: collapse !important;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        body {
+ 
+            height: 100% !important;
+ 
+            margin: 0;
+ 
+            padding: 0;
+ 
+            width: 100% !important;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* iOS BLUE LINKS */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        .appleBody a {
+ 
+            color: #68440a;
+ 
+            text-decoration: none;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        .appleFooter a {
+ 
+            color: #999999;
+ 
+            text-decoration: none;
+ 
+        }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /* MOBILE STYLES */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        @media screen and (max-width: 525px) {
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            /* ALLOWS FOR FLUID TABLES */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            table[class="wrapper"] {
+ 
+                width: 100% !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            /* ADJUSTS LAYOUT OF LOGO IMAGE */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="logo"] {
+ 
+                text-align: left;
+ 
+                padding: 20px 0 20px 0 !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                td[class="logo"] img {
+ 
+                    margin: 0 auto !important;
+ 
+                }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="mobile-hide"] {
+ 
+                display: none;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            img[class="mobile-hide"] {
+ 
+                display: none !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            img[class="img-max"] {
+ 
+                max-width: 100% !important;
+ 
+                height: auto !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            /* FULL-WIDTH TABLES */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            table[class="responsive-table"] {
+ 
+                width: 100% !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="padding"] {
+ 
+                padding: 0px 5% 0px 5% !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="padding-copy"] {
+ 
+                text-align: center;
+ 
+                min-width: inherit !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="padding-meta"] {
+ 
+                padding: 30px 5% 0px 5% !important;
+ 
+                text-align: center;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="no-pad"] {
+ 
+                padding: 0 0 20px 0 !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="no-padding"] {
+ 
+                padding: 0 !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="section-padding"] {
+ 
+                /* padding: 0px 15px 0px 15px !important; */
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="section-padding-bottom-image"] {
+ 
+                padding: 50px 15px 0 15px !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            /* ADJUST BUTTONS ON MOBILE */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            td[class="mobile-wrapper"] {
+ 
+                padding: 0px !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            table[class="mobile-button-container"] {
+ 
+                margin: 0 auto;
+ 
+                width: 100% !important;
+ 
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            a[class="mobile-button"] {
+ 
+                width: 80% !important;
+ 
+                padding: 15px !important;
+ 
+                border: 0 !important;
+ 
+                font-size: 16px !important;
+ 
+            }
+ 
+        }
+ 
+    </style>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</head>
+ 
+<body bgcolor="#adabac"style="margin: 0; padding: 0 !important;"><table style="#adabac;" class="component" onclick="makeDeSelectAll(event); makeSelection(this);" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" bgcolor="#adabac" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 650px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0;" class="section-padding" align="center" bgcolor="#d2e2fa" width="325">
+                                <table style="width: 325px;
+                                       background-color: #d2e2fa;" class="responsive-table" cellpadding="0" cellspacing="0" width="325">
+                                    <tbody>
+                                        <tr>
+                                            <td style="position:relative;">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <!-- HERO IMAGE -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="border: 1px solid;" class="padding-copy">
+                                                                                <table style="margin: 10px;" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="padding: 10px;" class="padding-copy" align="center">
+                                                                                                <img style="display: block;color: #666666; text-decoration: none;
+                                                                                                     font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                                     width: 283px;
+                                                                                                     height: 200px !important;" src="https://img.bordingmailit.se/lrf/extpro/ATL_chefred_lilan.jpg" ng-src="https://img.bordingmailit.se/lrf/extpro/ATL_chefred_lilan.jpg" alt="Left image" class="img-max" border="0" height="200" width="283">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+ 
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="padding: 0;" class="section-padding" align="center" bgcolor="#e3cae6" width="325">
+                                <table style="width: 325px;
+                                       background-color: #e3cae6;" class="responsive-table" cellpadding="0" cellspacing="0" width="325">
+                                    <tbody>
+                                        <tr>
+                                            <td style="position:relative;">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <!-- HERO IMAGE -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="border: 1px solid;" class="padding-copy">
+                                                                                <table style="margin: 10px;" border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="padding: 10px;" class="padding-copy" align="center">
+                                                                                                <img style="display: block;color: #666666; text-decoration: none;
+                                                                                     font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 283px;
+                                                                                     height: 200px !important;" src="https://img.bordingmailit.se/lrf/extpro/LMN_3nr_199.jpg" ng-src="https://img.bordingmailit.se/lrf/extpro/LMN_3nr_199.jpg" alt="Right image" class="img-max" border="0" height="200" width="283">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+ 
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+ 
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="showhover ng-hide" title="delete" ng-click="deleteComponent()" ng-show="hoverEdit">
+                    <span class="glyphicon glyphicon-trash remove-hover" aria-hidden="true" title="delete component"></span>
+               </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="" class="component" onclick="makeDeSelectAll(event); makeSelection(this);" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" bgcolor="#adabac" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center" height="0">
+                <table style="width: 650px  ;background-color: #523737 " class="responsive-table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0;" class="section-padding" align="center" bgcolor="#bec9cc" width="325">
+                                <table style="width: 325px" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table style="margin: 10px" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 20px">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>                                                                          
+                                                                            <td class="padding-copy" align="center" width="325">
+                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" bgcolor="#4ba672" height="40" width="200">
+                                                                                                <a href="https://www.google.com/" target="_blank" style="color:#ffffff !important;text-decoration:none !important;font-size:23px !important;" ng-bind-html="model.property.leftButtonText">Left Button link</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="padding: 0;" class="section-padding" align="center" bgcolor="#bfbfdb" width="325">
+                                <table style="width: 325px" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table style="margin: 10px" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 20px">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" align="center" width="325">
+                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" bgcolor="#5189a3" height="40" width="200">
+                                                                                                <a href="https://www.facebook.com/" target="_blank" style="color:#ffffff !important;text-decoration:none !important;font-size:23px !important;" ng-bind-html="model.property.rightButtonText">Right Button link</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a style="" class="showhover ng-hide" title="delete" ng-click="deleteComponent()" ng-show="hoverEdit">
+                    <span class="glyphicon glyphicon-trash remove-hover" aria-hidden="true" title="delete component"></span>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table><table style="" class="component selected" onclick="makeDeSelectAll(event); makeSelection(this);" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="vm.select()" bgcolor="#adabac" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 650px  ;background-color: #a9bec2" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="" height="80">
+                                <table style="margin: 15px" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 15px">
+                                                <table class="responsive-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="middle" width="650">
+                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="background-color: #4a88ba
+                                                                                               ;width: 250px" align="center" height="40">
+                                                                                <a href="https://www.google.com/" target="_blank" style="color:#ffffff !important;text-decoration:none !important;font-size:23px !important;display:block !important;" ng-bind-html="model.property.text">Click Me</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+ 
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a style="" class="showhover ng-hide" title="delete" ng-click="deleteComponent()" ng-show="hoverEdit">
+                    <span class="glyphicon glyphicon-trash remove-hover" aria-hidden="true" title="delete component"></span>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+ 
+<table style="#adabac;" class="component" onclick="makeDeSelectAll(event); makeSelection(this);" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-click="vm.select()" bgcolor="#adabac" border="0" cellpadding="0" cellspacing="0" width="100%">
+ 
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table style="width: 650px;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="section-padding" align="center" bgcolor="#ffffff" width="325">
+                                <table style="width: 325px;
+                                       background-color: #ffffff;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td style="">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 20px;">
+                                                                <!-- COPY -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" ng-bind-html="model.property.leftColumnText" align="center" width="325">This is Left column text</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="padding: 0;" class="section-padding" align="center" bgcolor="#ffffff" width="325">
+                                <table style="width: 325px;  
+                                       background-color: #ffffff;" class="responsive-table" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td style="">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 10px;">
+                                                                <!-- COPY -->
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="padding-copy" ng-bind-html="model.property.rightColumnText" align="center" width="325">This is Right column text</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+ 
+                <a style="" class="showhover ng-hide" title="delete" ng-click="deleteComponent()" ng-show="hoverEdit">
+                    <span class="glyphicon glyphicon-trash remove-hover" aria-hidden="true" title="delete component"></span>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="#adabac;" class="component" onclick="makeDeSelectAll(event); makeSelection(this);" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" bgcolor="#adabac" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">                
+                <table style="background-color: #d2e2fa;
+                   width: 650px;" class="responsive-table" bgcolor="#d2e2fa" cellpadding="0" cellspacing="0" width="650">
+                    <tbody>
+                        <tr>
+                            <td style="position:relative;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <!-- HERO IMAGE -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="" class="padding-copy">
+                                                                <table style="margin: 10px;" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="padding: 10px;" class="padding-copy" align="center">
+                                                                                <img style="display: block;color: #666666; text-decoration: none;
+                                                                     font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 610px;
+                                                                                     height: autopx !important;" src="https://img.bordingmailit.se/lrf/extpro/ATL_chefred_lilan.jpg" ng-src="https://img.bordingmailit.se/lrf/extpro/ATL_chefred_lilan.jpg" alt="Single Image" class="img-max" border="0" height="auto" width="610">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>               
+                <a style="" class="showhover ng-hide" title="delete" ng-click="deleteComponent()" ng-show="hoverEdit">
+                    <span class="glyphicon glyphicon-trash  remove-hover" aria-hidden="true" title="delete component"></span>
+                </a>            
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="#adabac;" class="component" onclick="makeDeSelectAll(event); makeSelection(this);" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" bgcolor="#adabac" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" border="0" class="section-padding" align="center">
+                <table style="width: 650px;
+                       background-color: #ffffff;" class="responsive-table" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="" height="50">
+                                <table style="margin: 10px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 20px;">
+                                                <!-- COPY -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="padding-copy" ng-bind-html="model.property.text" align="center" width="650"><div style="text-align: center;"><strong><span style="font-size: 12pt;">This is single column text.</span></strong></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a style="" class="showhover ng-hide" title="delete" ng-click="deleteComponent()" ng-show="hoverEdit">
+                    <span class="glyphicon glyphicon-trash remove-hover" aria-hidden="true" title="delete component"></span>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table></body></html>

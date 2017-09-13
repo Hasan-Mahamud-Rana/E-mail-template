@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Salted | A Responsive Email Template</title>
+    <!--
+        SALTED | A RESPONSIVE EMAIL TEMPLATE
+        =====================================
+        Based on code used and tested by Litmus (@litmusapp)
+        Originally developed by Bording Vista (@Bordingvista)
+        Cleaned up by Kofil Mahamud (@kma)
+        Presented by A List Apart (@alistapart)
+        Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
+        It's highly recommended that you test using a service like Litmus and your own devices.
+        Enjoy!
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        a, a:link, a:visited {
+            text-decoration: none;
+        }
+
+        #outlook a {
+            padding: 0;
+        }
+        /* Force Outlook to provide a "view in browser" message */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+            /* Force Hotmail to display emails at full width */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+                line-height: 100%;
+            }
+        /* Force Hotmail to display normal line spacing */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        /* Remove spacing between tables in Outlook 2007 and up */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* Allow smoother rendering of resized image in Internet Explorer */
+        /* RESET STYLES */
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+        /* iOS BLUE LINKS */
+        .appleBody a {
+            color: #68440a;
+            text-decoration: none;
+        }
+
+        .appleFooter a {
+            color: #999999;
+            text-decoration: none;
+        }
+
+        /* MOBILE STYLES */
+        @media screen and (max-width: 525px) {
+            /* ALLOWS FOR FLUID TABLES */
+
+            .divWidth {
+                width: auto !important;
+            }
+
+            .mobile-pad {
+                padding: 20px !important;
+            }
+
+            table[class="wrapper"] {
+                width: 100% !important;
+            }
+            /* ADJUSTS LAYOUT OF LOGO IMAGE */
+            td[class="logo"] {
+                text-align: left;
+                padding: 20px 0 20px 0 !important;
+            }
+
+                td[class="logo"] img {
+                    margin: 0 auto !important;
+                }
+            /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+            td[class="mobile-hide"] {
+                display: none;
+            }
+
+            img[class="mobile-hide"] {
+                display: none !important;
+            }
+
+            img[class="img-max"] {
+                max-width: 100% !important;
+                height: auto !important;
+                width: 100% !important;
+            }
+            /* FULL-WIDTH TABLES */
+            table[class="responsive-table"] {
+                width: 100% !important;
+            }
+            /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+            td[class="padding"] {
+                padding: 0px 5% 0px 5% !important;
+            }
+
+            td[class="padding-copy"] {
+                text-align: center;
+                min-width: inherit !important;
+            }
+
+            td[class="padding-meta"] {
+                padding: 30px 5% 0px 5% !important;
+                text-align: center;
+            }
+
+            td[class="no-pad"] {
+                padding: 0 0 20px 0 !important;
+            }
+
+            td[class="no-padding"] {
+                padding: 0 !important;
+            }
+
+            td[class="section-padding"] {
+                /* padding: 0px 15px 0px 15px !important; */
+            }
+
+            td[class="section-padding-bottom-image"] {
+                padding: 50px 15px 0 15px !important;
+            }
+            /* ADJUST BUTTONS ON MOBILE */
+            td[class="mobile-wrapper"] {
+                padding: 0px !important;
+            }
+
+            table[class="mobile-button-container"] {
+                margin: 0 auto;
+                width: 100% !important;
+            }
+
+            a[class="mobile-button"] {
+                width: 80% !important;
+                padding: 15px !important;
+                border: 0 !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="#e3e3e3"style="margin: 0; padding: 0 !important;"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" class="section-padding">
+                <table class="responsive-table" cellpadding="0" cellspacing="0" width="600" style="width: 600px;
+                                      ">
+                    <tbody>
+                        <tr>
+                            <td style="position:relative;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="padding-copy" style="
+                                                                               ">
+                                                                <table style="max-width:100%; min-width:100%;" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center" class="padding-copy">
+                                                                                <!-- ngIf: model.property.createLinkImage -->
+                                                                                <!-- ngIf: !model.property.createLinkImage --><img ng-if="!model.property.createLinkImage" border="0" alt="Single Image" class="img-max" width="600" height="auto" src="http://img.bordingvista.com:8086/Andys/BordingInstore-logo.png" style="display: block;color: #666666; text-decoration: none;font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                                    width: 600px;
+                                                                                                    height:auto !important;"><!-- end ngIf: !model.property.createLinkImage -->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" border="0" class="section-padding">
+                <table cellpadding="0" cellspacing="0" class="responsive-table" style="width: 600px;
+                       ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="" style="
+                                                 ">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="text-align: left;" class="padding-copy" width="600"><div style="text-align: left;"><span style="font-size: 16pt;"><strong><label>Vælg din farve</label></strong> [radio-947]</span></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" border="0" class="section-padding">
+                <table cellpadding="0" cellspacing="0" class="responsive-table" style="width: 600px;
+                       ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="" style="
+                                                 ">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="text-align: left;" class="padding-copy" width="600"><span style="font-size: 16pt;"><span style="color: #4d4d4d;font-family: 'open sans', arial, helvetica, sans-serif;"><strong>Firmanavn</strong>:&nbsp;</span><span style="color: #4d4d4d;font-family: 'open sans', arial, helvetica, sans-serif;">[Firmanavn]</span></span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" border="0" class="section-padding">
+                <table cellpadding="0" cellspacing="0" class="responsive-table" style="width: 600px;
+                       ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="" style="
+                                                 ">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="text-align: left;" class="padding-copy" width="600"><div style="text-align: left;"><span style="font-size: 16pt;"><strong><label>Dit navn:</label> </strong>[Ditnavn]</span></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" border="0" class="section-padding">
+                <table cellpadding="0" cellspacing="0" class="responsive-table" style="width: 600px;
+                       ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="" style="
+                                                 ">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="text-align: left;" class="padding-copy" width="600"><div style="text-align: left;"><span style="font-size: 16pt;"><strong><label>Direkte email:</label></strong> [Direkteemail]</span></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" border="0" class="section-padding">
+                <table cellpadding="0" cellspacing="0" class="responsive-table" style="width: 600px;
+                       ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="" style="
+                                                 ">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="text-align: left;" class="padding-copy" width="600"><div style="text-align: left;"><span style="font-size: 16pt;"><strong><label>Direkte tlf:</label> </strong>[Direktetlf]</span></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" border="0" class="section-padding">
+                <table cellpadding="0" cellspacing="0" class="responsive-table" style="width: 600px;
+                       ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="" style="
+                                                 ">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="text-align: left;" class="padding-copy" width="600"><div style="text-align: left;"><span style="font-size: 16pt;"><strong><label>Forslag til mødedato:</label></strong> [date-373]</span></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td style="padding: 0;" class="section-padding" align="center">
+                <table class="responsive-table" border="0" cellpadding="0" cellspacing="0" style="width:600px;   background-color: #e3e3e3;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="0" style=" padding: 15px;">
+                                                <table class="responsive-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+
+                                                            <td valign="middle" width="300" align="center">
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <!-- ngIf: model.property.TextActive --><td ng-if="model.property.TextActive" align="left"><span style="color: #666666;"><strong>Follow us</strong></span></td><!-- end ngIf: model.property.TextActive -->
+
+                                                                            <!-- ngIf: model.property.social1Active --><td ng-if="model.property.social1Active" align="center">
+                                                                                <a href="https://www.facebook.com" target="_blank">
+                                                                                    <img alt="facebook" class="img-max" border="0" height="60" width="75" src="https://img.bordingmailit.se/lrf/extpro/facebook_grey.gif" style="display: block;color: #666666; text-decoration: none;font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                        width: 75px;height: 60px !important;">
+                                                                                </a>
+                                                                            </td><!-- end ngIf: model.property.social1Active -->
+
+                                                                            <!-- ngIf: model.property.social2Active --><td ng-if="model.property.social2Active" align="center">
+                                                                                <a href="https://www.twitter.com" target="_blank">
+                                                                                    <img alt="twitter" class="img-max" border="0" height="60" width="75" src="https://img.bordingmailit.se/lrf/extpro/twitter_grey.gif" style="display: block;color: #666666; text-decoration: none;font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                         width: 75px;height: 60px !important;">
+                                                                                </a>
+                                                                            </td><!-- end ngIf: model.property.social2Active -->
+
+                                                                            <!-- ngIf: model.property.social3Active --><td ng-if="model.property.social3Active" align="center">
+                                                                                <a href="https://www.instagram.com" target="_blank">
+                                                                                    <img alt="instagram" class="img-max" border="0" height="60" width="75" src="https://img.bordingmailit.se/lrf/extpro/instagram_grey.gif" style="display: block;color: #666666; text-decoration: none;font-family: Helvetica, arial, sans-serif; font-size: 16px;
+                                                                                                        width: 75px;height: 60px !important;">
+                                                                                </a>
+                                                                            </td><!-- end ngIf: model.property.social3Active -->
+
+                                                                            <!-- ngIf: model.property.social4Active -->
+
+                                                                            <!-- ngIf: model.property.social5Active -->
+
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e3e3e3;">
+    <tbody>
+        <tr>
+            <td align="center" style="padding: 0;" border="0" class="section-padding">
+                <table cellpadding="0" cellspacing="0" class="responsive-table" style="width: 600px;
+                       background-color: #e3e3e3;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="" style="padding: 10px;
+                                                 ">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" style="text-align: left;" class="padding-copy" width="600"><div style="text-align: center;"><span style="color: #666666;"><a style="color: #666666;" title="Mailit Relation" href="http://www.bordinginstore.dk/" target="_blank">www.bordinginstore.dk</a></span></div></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </tbody>
+</table></body></html>
